@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'League Spartan', sans-serif !important;
+    background-color: var(--light-grayish-magenta);
+    height: 100vh;
+
+}
+
+:root {
+    --dark-grayish-magenta:hsl(303, 10%, 53%);
+    --light-grayish-magenta:hsl(300, 24%, 96%);
+    --color-white:hsl(0, 0%, 100%);
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink:hsl(333, 80%, 67%);
+}
+
+.title-section {
+    color: var(--very-dark-magenta)!important;
+    font-weight: bold!important;
+    font-size: 45px;
+    line-height: .9!important;
+}
+.title-social p {
+    color: var(--dark-grayish-magenta)!important;
+    line-height: 1.6;
+}
+.title-social {
+    width: 380px;
+    max-width: 100%; 
+}
+.rated {
+    padding: 15px 40px 12px;
+    border-radius: 5px;
+    background-color: var(--light-grayish-magenta)!important;
+}
+.rated .context {
+    color: var(--very-dark-magenta);
+    font-size: 14px;
+    font-weight: 700;
+}
+.star1 {
+    transform: translateX(-100px);
+}
+.star2 {
+    transform: translateX(-60px);
+}
+@media (max-width: 991px){
+    .proof-section {
+        flex-direction: column;
+    }
+    .star1 ,
+    .star2 {
+        transform: translateX(0);
+    }  
+    .rated {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 3rem;
+    }
+    .title-section {
+        font-size: 40px;
+    }
+}
+.first-community {
+    background-color: var(--very-dark-magenta);
+}
+.head-colton img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.txt-community .name {
+    color: var(--light-grayish-magenta);
+}
+.txt-community span {
+    color: var(--soft-pink);
+}
+
+.first-community p {
+    color: var(--light-grayish-magenta);
+}
+.second-comment {
+    transform: translateY(25px);
+}
+.third-comment {
+    transform: translateY(40px);
+}
